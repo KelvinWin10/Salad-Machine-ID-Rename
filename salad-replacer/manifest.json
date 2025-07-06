@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "salad machine id replace",
+  "version": "1.0",
+  "description": "Replace your machine ids with anything",
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.salad.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Manage machine IDs"
+  }
+}

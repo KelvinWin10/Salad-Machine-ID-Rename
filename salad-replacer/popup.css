@@ -1,0 +1,106 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-width: 320px;
+  max-height: 600px;      /* weird for my resolution, (1600x1024) */
+  padding: 20px;
+  background: #f5f7fa;
+  color: #1B3B1B;
+  overflow-y: auto;       
+  box-sizing: border-box; 
+}
+title {
+    padding: 25px;
+} 
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #222;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+li {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+  align-items: center;
+  background: #FFFFFF;
+  padding: 10px 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgb(58 161 79 / 0.15);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+
+li:hover {
+  background: #D9F1D8; 
+  box-shadow: 0 4px 12px rgb(58 161 79 / 0.3);
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 8px 12px;
+  font-size: 15px;
+  border: 1.8px solid #a5d6a7;
+  border-radius: 6px;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+  outline-offset: 2px;
+}
+
+input[type="text"]:focus {
+  border-color: #3AA14F;
+  box-shadow: 0 0 8px rgba(58, 161, 79, 0.5);
+}
+
+button.delete-btn {
+  background: #E53E3E;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease, transform 0.15s ease;
+  user-select: none;
+}
+
+button.delete-btn:hover {
+  background: #B83232;
+  transform: scale(1.1);
+}
+
+#add-btn {
+  margin-top: 15px;
+  width: 100%;
+  padding: 10px 0;
+  font-size: 17px;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  background: #3AA14F;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(58, 161, 79, 0.6);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.15s ease;
+  user-select: none;
+}
+
+#add-btn:hover {
+  background: #5AC060;
+  box-shadow: 0 6px 18px rgba(90, 192, 96, 0.8);
+  transform: scale(1.05);
+}
+
+#add-btn:active {
+  transform: scale(0.95);
+  box-shadow: 0 3px 10px rgba(50, 107, 204, 0.5);
+}
